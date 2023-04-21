@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package textgen;
+
+service TextGen {
+    rpc Generate (stream TextRequest) returns (stream TextResponse) {}
+}
+
+message TextRequest {
+    string input = 1;
+    int32 length = 2;
+}
+
+message TextResponse {
+    string output = 1;
+}
