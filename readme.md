@@ -1,6 +1,12 @@
 # StoryForge
 StoryForge is a fictional text-generation project that uses a custom-made GRU architecture to generate fictional stories. The project has two main components: a Python backend server and a Rust server. The Python backend server uses a manually-curated dataset of fictional stories to generate text, while the Rust server displays the generated text to the user.
 
+# Backend Architecture
+
+
+![Untitled Diagram drawio-13](https://user-images.githubusercontent.com/64341057/233660031-0db73248-6572-4ac8-8d78-2bd317357b87.png)
+
+
 # Python Backend Server
 The Python backend server is responsible for generating the text using the GRU architecture. It uses a dataset of fictional stories to train the model and generate new text. The generated text is returned as a gRPC response to the Rust server. The server is implemented using the gRPC Python library and communicates with the Rust server using the textgen.proto file.
 
